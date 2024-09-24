@@ -1,0 +1,306 @@
+/*=============================
+* Common CSS
+==============================*/
+
+img{
+    max-width: 100%;
+}
+
+
+/*===================================
+* Header Area Style
+====================================*/
+#header_area{
+    padding:15px 0;
+}
+
+/*===================================
+* Main Menu CSS
+====================================*/
+
+body{
+    font-family: "Kaisei Decol", serif;
+    font-size: 15px;
+    line-height: 1.5em;
+  font-weight: 400;
+  font-style: normal;
+}
+p{
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    line-height: 1.5em;
+  font-weight: 400;
+  font-style: normal;
+}
+  
+h1,h2,h3,h4,h5,h6{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.5em;
+}
+#main_menu{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    width: 100%;
+    clear: both;
+}
+.inner_menu{
+
+}
+
+#main_menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+#main_menu ul li{}
+#main_menu ul li a{}
+#main_menu ul li a:hover{}
+
+/*===================================
+* Main Nav Menu CSS
+====================================*/
+#main_menu{
+    width: 100%;
+    clear: both;
+}
+.inner_menu{
+background: #333;
+position: relative;
+min-height: 30px;
+padding: 3px 0;
+border-radius: 5px;
+z-index: 1;
+}
+.inner_menu::after{
+background: #2b2b2b;
+position: absolute;
+width: 100%;
+height: 50%;
+bottom: 0;
+left: 0;
+content: "";
+z-index: -1;
+}
+
+#main_menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+#main_menu ul li{
+    display: inline-block;
+    margin: 0 5px;
+    position: relative;
+}
+#main_menu ul li a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 4px;
+    font-size: 18px;
+}
+#main_menu ul li a span{
+    display: block;
+    font-size: 12px;
+}
+#main_menu ul li a:hover{
+    color: #ba2315;
+}
+#main_menu ul li:hover a{
+    color: #ba2315;
+}
+#main_menu ul li:hover ul li a{
+    color: #ffff;
+}
+/*Dropdown Style*/
+#main_menu ul ul{
+    position: absolute;
+    background: #ba2e1f;
+    width: 180px;
+    left: -99999999px;
+    top: 25px;
+}
+#main_menu ul li:hover ul{
+    left: 0;
+}
+#main_menu ul li:hover ul ul{
+    left: -999999px;
+}
+#main_menu ul ul ul{
+    left: -9999999px;
+    top: 0px;
+ }
+#main_menu ul li:hover ul li:hover ul{
+    left: 180px;
+}
+#main_menu ul ul li{
+    margin: 0;
+    display: block;
+}
+#main_menu ul ul li a:hover{
+    background: #333333;
+    color: white;
+}
+#main_menu ul ul li a:hover{
+    background: #333333;
+    color: white;
+}
+#main_menu ul ul li:hover a{
+    background: #333333;
+    color: #fff;
+}
+#main_menu ul ul li:hover ul li a{
+    background: none;
+    color: #fff;
+}
+#main_menu ul ul li ul li a:hover{
+    background: #333333;
+    color: #fff;
+}
+/*===================================
+* Main Position
+====================================*/
+#header_area.left_menu .col-md-3{
+    order: 2;
+}
+#header_area.left_menu .col-md-9{
+    order: 1;
+}
+#header_area.left_menu .col-md-9 ul{
+    text-align: left;
+}
+
+
+#header_area.center_menu .col-md-3{
+   width: 100%;
+   text-align: center;
+   margin-bottom: 10px;
+}
+#header_area.center_menu .col-md-9{
+    width: 100%;
+}
+#header_area.center_menu .col-md-9 ul{
+    text-align: left;
+    text-align: center;
+
+}
+#header_area.center_menu .col-md-9 ul ul{
+    text-align: left;
+    text-align: center;
+
+}
+
+/*===================================
+* Index Page Style
+====================================*/
+#body_area{
+    padding: 45px 0;
+}
+#body_area .blog_area {
+    padding: 15px;
+    width: 100%;
+    margin-bottom: 15px;
+    background: #dbdbdb;
+    border-radius: 8px;
+}
+#body_area .post_thumb{
+    overflow: hidden;
+    width: 100%; 
+    margin-bottom: 15px;
+}
+
+
+#body_area .post_thumb img{
+    transition: 0.5s;
+    width: 60%;
+     display: block;
+}
+#body_area .post_thumb:hover img{
+   transform: scale(1.1);
+}
+
+#body_area .post_details h2{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+#body_area .post_details h2 a{
+  color: #262626;
+  text-decoration: none;
+}
+#body_area .post_details h2 a:hover{
+  color: #ea1a70;
+  text-decoration: none;
+  transition: 0.5s;
+}
+#body_area .post_details{
+    width: 100%;
+     margin-bottom: 15px;
+}
+
+/*===================================
+* Page nav area styling 
+====================================*/
+#page_nav{}
+
+#page_nav p.pages {
+    background: #ea1a70;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+#page_nav .page-numbers {
+    background-color: #ea1a70;
+    color: wheat;
+    display: inline-block;
+    padding: 5px 10px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+#page_nav .page-numbers:hover {
+    background-color: black;
+   
+}
+span.page-numbers.current {
+    background: #262626 !important;
+}
+
+/*===================================
+* Copyright Position
+====================================*/
+#copyright_area{
+background-color: #191919;
+padding: 20px 0;
+color: #fff;
+text-align: center;
+}
+#copyright_area p{
+margin: 0;
+color: #fff;
+font-size: 15px;
+}
+#copyright_area p a{
+color: #ea1a70;
+}
+#copyright_area p a:hover{
+text-decoration: underline;
+}
+a.readmore {
+    background-color: #ea1a70;
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: .5s;
+}
+a.readmore:hover {
+    background-color: #262626;
+}
